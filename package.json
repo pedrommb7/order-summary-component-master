@@ -1,0 +1,22 @@
+{
+  "name": "order-summary-component-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedrommb7/order-summary-component-master.git"
+  },
+  "author": "Pedro Barbosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedrommb7/order-summary-component-master/issues"
+  },
+  "homepage": "https://github.com/pedrommb7/order-summary-component-master#readme",
+  "dependencies": {
+    "sass": "^1.52.1"
+  }
+}
