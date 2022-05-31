@@ -5,30 +5,32 @@
 
 body {
     background-color: $pale-blue;
-        
 
-        .order-summary {
+        .container {
             background-color: $very-pale-blue;
             font-family: $red-hat-display;
-            padding: 35px;
 
-            h1,h4 {
-                text-align: center;
+            .text {
+                h1,
+                h4 {
+                    text-align: center;
+                }
+            
+                h1 {
+                    color: $dark-blue;
+                    margin-top: 0;
+                    font-weight: 900;
+                }
+            
+                h4 {
+                    font-weight: 500;
+                }
+            
+                h4,
+                p {
+                    color: $gray;
+                }
             }
-        
-            h1 {
-                color: $dark-blue;
-            }
-        
-            h4 {
-                font-weight: 500;
-            }
-        
-            h4,
-            p {
-                color: $gray;
-            }
-
 
             
             .bill-charge{
@@ -39,13 +41,35 @@ body {
                 flex-flow: row nowrap;
                 justify-content: space-evenly;
                 align-items: center;
-
+                margin-bottom: 30px;
+                
                 h6 {
                     font-weight: 900;
                 }
 
                 a {
                     color: $bright-blue;
+
+                    &:hover {
+                        text-decoration: none;
+                        color: hsla(245, 75%, 52%, 0.5);
+                    }
+                }
+
+                .price {
+                    text-align: center;
+
+                    h4 {
+                        margin-bottom: 0px;
+                        font-weight: 900;
+                        color: $dark-blue;
+                    }
+
+                    p {
+                        margin-top: 3px;
+                        color: $gray;
+                        font-weight: 500;
+                    }
                 }
             }
 
@@ -54,10 +78,33 @@ body {
                 display: flex;
                 flex-flow: column wrap;
                 align-items: center;
-                margin: 15px;
+
+                button {
+                    background-color: $bright-blue;
+                    color: $pale-blue;
+                    padding: 15px 70px;
+                    border-radius: 10px;
+                    font-family: $red-hat-display;
+                    font-weight: 900;
+                    border: none;
+                    box-shadow: 0px 10px 15px 2px $bright-blue2;
+                    width: 100%;
+                    
+                    &:hover{
+                        background-color: hsla(245, 75%, 52%, 0.5);
+                    }
+                    
+                }
                 
                 a {
+                    font-family: $red-hat-display;
+                    font-weight: 900;
                     color: $gray;
+                    padding-top: 25px;
+
+                    &:hover {
+                        color: $dark-blue;
+                    }
                 }
             }
             
@@ -72,5 +119,45 @@ footer {
 
     .attribution a {
         color: hsl(228, 45%, 44%);
+    }
+}
+
+
+
+@media (max-width: 800px) {
+    .container {
+        border-radius: 25px;
+        margin: 50px 20px;
+
+        img {
+            //vertical-align: middle;
+            height: 180px;
+            width: 100%;
+            display: block;
+            border-radius: 20px 20px 0px 0px;
+        }
+
+        .pd-25 {
+            padding: 25px;
+        }
+    }
+}
+
+@media (min-width: 801px) {
+    .container {
+        border-radius: 15px;
+        margin: 100px 550px;
+
+        img {
+            //vertical-align: middle;
+            height: 180px;
+            width: 100%;
+            display: block;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        .pd-45{
+            padding: 45px;
+        }
     }
 }
