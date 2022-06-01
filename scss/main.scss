@@ -5,10 +5,19 @@
 
 body {
     background-color: $pale-blue;
-
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
         .container {
             background-color: $very-pale-blue;
             font-family: $red-hat-display;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
 
             .text {
                 h1,
@@ -35,14 +44,14 @@ body {
             
             .bill-charge{
                 background-color: $desaturated-blue;
-                border-radius: 10px;
-
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: space-evenly;
-                align-items: center;
+                border-radius: 10px;            
                 margin-bottom: 30px;
-                
+
+                .icon-music {
+                    height: 48px;
+                    width: 48px;
+                }
+    
                 h6 {
                     font-weight: 900;
                 }
@@ -57,7 +66,6 @@ body {
                 }
 
                 .price {
-                    text-align: center;
 
                     h4 {
                         margin-bottom: 0px;
@@ -125,39 +133,59 @@ footer {
 
 
 @media (max-width: 800px) {
-    .container {
-        border-radius: 25px;
-        margin: 50px 20px;
+    body {
 
-        img {
-            //vertical-align: middle;
-            height: 180px;
-            width: 100%;
-            display: block;
-            border-radius: 20px 20px 0px 0px;
-        }
+        .container {
+            border-radius: 25px;
+            margin: 50px 20px;
+    
+            img {
+                //vertical-align: middle;
+                height: 180px;
+                width: 100%;
+                display: block;
+                border-radius: 20px 20px 0px 0px;
+            }
+    
+            .pd-25 {
+                padding: 25px;
+            }
 
-        .pd-25 {
-            padding: 25px;
+            .bill-charge {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
         }
     }
+    
 }
 
 @media (min-width: 801px) {
-    .container {
-        border-radius: 15px;
-        margin: 100px 550px;
 
-        img {
-            //vertical-align: middle;
-            height: 180px;
-            width: 100%;
-            display: block;
-            border-radius: 15px 15px 0px 0px;
-        }
+    body {
+        .container {
+            border-radius: 15px;
 
-        .pd-45{
-            padding: 45px;
+            img {
+                //vertical-align: middle;
+                height: 180px;
+                width: 100%;
+                display: block;
+                border-radius: 15px 15px 0px 0px;
+            }
+    
+            .pd-45 {
+                padding: 45px;
+            }
+
+            .bill-charge {
+                display: flex;
+                flex-direction: row wrap;
+                justify-content: space-evenly;
+                align-items: center;
+            }
         }
     }
+    
 }

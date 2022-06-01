@@ -2,10 +2,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 body {
   background-color: hsl(225deg, 100%, 94%);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 body .container {
   background-color: hsl(225deg, 100%, 98%);
   font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
 }
 body .container .text h1,
 body .container .text h4 {
@@ -26,11 +35,11 @@ body .container .text p {
 body .container .bill-charge {
   background-color: rgba(114, 128, 167, 0.06);
   border-radius: 10px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  align-items: center;
   margin-bottom: 30px;
+}
+body .container .bill-charge .icon-music {
+  height: 48px;
+  width: 48px;
 }
 body .container .bill-charge h6 {
   font-weight: 900;
@@ -41,9 +50,6 @@ body .container .bill-charge a {
 body .container .bill-charge a:hover {
   text-decoration: none;
   color: hsla(245deg, 75%, 52%, 0.5);
-}
-body .container .bill-charge .price {
-  text-align: center;
 }
 body .container .bill-charge .price h4 {
   margin-bottom: 0px;
@@ -93,33 +99,43 @@ footer .attribution a {
 }
 
 @media (max-width: 800px) {
-  .container {
+  body .container {
     border-radius: 25px;
     margin: 50px 20px;
   }
-  .container img {
+  body .container img {
     height: 180px;
     width: 100%;
     display: block;
     border-radius: 20px 20px 0px 0px;
   }
-  .container .pd-25 {
+  body .container .pd-25 {
     padding: 25px;
+  }
+  body .container .bill-charge {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
   }
 }
 @media (min-width: 801px) {
-  .container {
+  body .container {
     border-radius: 15px;
-    margin: 100px 550px;
   }
-  .container img {
+  body .container img {
     height: 180px;
     width: 100%;
     display: block;
     border-radius: 15px 15px 0px 0px;
   }
-  .container .pd-45 {
+  body .container .pd-45 {
     padding: 45px;
+  }
+  body .container .bill-charge {
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
   }
 }
 
