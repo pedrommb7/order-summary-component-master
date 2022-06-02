@@ -2,13 +2,68 @@
 @import '../Settings/variables';
 
 @mixin max-width {
+    @media (max-width: 700px) {
+            body {
 
-    
-    
+                .container {
+                    border-radius: 25px;
+                    margin: 50px 20px;
+
+                    img {
+                        //vertical-align: middle;
+                        height: 180px;
+                        width: 100%;
+                        display: block;
+                        border-radius: 20px 20px 0px 0px;
+                    }
+
+                    .pd-25 {
+                        padding: 25px;
+                    }
+
+                    .bill-charge {
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                    }
+                }
+            }
+
+    }
 }
 
 @mixin min-width {
 
+    @media (min-width: 701px) {
     
+            body {
+                background-image: url('../images/pattern-background-desktop.svg');
+    
+                .container {
+                    border-radius: 15px;
+                    width: 55vh;
+    
+                    img {
+                        //vertical-align: middle;
+                        height: 180px;
+                        width: 100%;
+                        display: block;
+                        border-radius: 15px 15px 0px 0px;
+                    }
+    
+                    .pd-45 {
+                        padding: 45px;
+                    }
+    
+                    .bill-charge {
+                        display: flex;
+                        flex-direction: row wrap;
+                        justify-content: space-evenly;
+                        align-items: center;
+                    }
+                }
+            }
+    
+    }
 
 }
