@@ -76,6 +76,7 @@ body .container .buttons button {
   border: none;
   box-shadow: 0px 10px 15px 2px hsla(245deg, 75%, 52%, 0.315);
   width: 100%;
+  font-size: 15px;
 }
 body .container .buttons button:hover {
   background-color: hsla(245deg, 75%, 52%, 0.5);
@@ -85,6 +86,7 @@ body .container .buttons a {
   font-weight: 900;
   color: hsl(224deg, 23%, 55%);
   padding-top: 25px;
+  text-decoration: none;
 }
 body .container .buttons a:hover {
   color: hsl(223deg, 47%, 23%);
