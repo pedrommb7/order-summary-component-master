@@ -103,6 +103,7 @@ footer .attribution a {
 @media (min-width: 701px) {
   body {
     background-image: url("../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
   }
   body .container {
     border-radius: 15px;
@@ -119,7 +120,7 @@ footer .attribution a {
   }
   body .container .bill-charge {
     display: flex;
-    flex-direction: row wrap;
+    flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
   }
