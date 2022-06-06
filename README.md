@@ -40,5 +40,4 @@ Users should be able to:
 
 ## Author
 
-- Website - [https://ordersummary-cardcomponent.netlify.app/](https://ordersummary-cardcomponent.netlify.app/)
 - Frontend Mentor - [@pedrommb7](https://www.frontendmentor.io/profile/pedrommb7)
