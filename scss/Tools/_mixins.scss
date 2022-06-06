@@ -38,6 +38,7 @@
     
             body {
                 background-image: url('../images/pattern-background-desktop.svg');
+                background-repeat: no-repeat;
     
                 .container {
                     border-radius: 15px;
@@ -57,7 +58,7 @@
     
                     .bill-charge {
                         display: flex;
-                        flex-direction: row wrap;
+                        flex-flow: row wrap;
                         justify-content: space-evenly;
                         align-items: center;
                     }
