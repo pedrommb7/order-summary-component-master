@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch --update --style=expanded scss:dist/css"
+    "sass": "sass --watch --update --style=expanded scss:dist/css",
+    "build": "react-scripts build"
   },
   "repository": {
     "type": "git",
