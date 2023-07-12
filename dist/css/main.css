@@ -37,9 +37,14 @@ body .container .bill-charge {
   border-radius: 10px;
   margin-bottom: 30px;
 }
+body .container .bill-charge > div {
+  display: flex;
+  align-items: center;
+}
 body .container .bill-charge .icon-music {
   height: 48px;
   width: 48px;
+  margin-right: 20px;
 }
 body .container .bill-charge h6 {
   font-weight: 900;
@@ -141,7 +146,7 @@ footer .attribution a {
   }
   body .container .bill-charge {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
   }
 }
